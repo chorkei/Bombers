@@ -11,7 +11,7 @@ try:
 	password = input("Your way2sms password: ")
 	w2s.login(username,password)
 
-	for i in range(0,n):
+	for i in range(n):
 		w2s.send(mobile_number,message)
 		print(str(i+1)+" messages sent!")
 

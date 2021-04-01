@@ -14,7 +14,7 @@ try:
     message = input("Enter Message:")
     counter = int(input("How many message you want to send?:"))
 
-    for x in range(0,counter):
+    for x in range(counter):
         print("Number of Message Sent : ", x+1)
         mail = smtplib.SMTP('smtp.gmail.com',587)
         mail.ehlo()
